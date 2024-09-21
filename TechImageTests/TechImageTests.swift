@@ -2,8 +2,7 @@
 //  TechImageTests.swift
 //  TechImageTests
 //
-//  Created by 菅原大輝 on 2024/09/22.
-//
+
 
 import Testing
 @testable import TechImage

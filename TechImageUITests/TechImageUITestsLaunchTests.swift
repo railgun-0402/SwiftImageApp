@@ -2,8 +2,7 @@
 //  TechImageUITestsLaunchTests.swift
 //  TechImageUITests
 //
-//  Created by 菅原大輝 on 2024/09/22.
-//
+
 
 import XCTest
 

@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B2215062C9F2AB2008273C8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2214FF2C9F2AB2008273C8 /* Album.swift */; };
+		0B2215072C9F2AB2008273C8 /* TechImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2215022C9F2AB2008273C8 /* TechImageApp.swift */; };
+		0B2215082C9F2AB2008273C8 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2215042C9F2AB2008273C8 /* AlbumView.swift */; };
+		0B2215092C9F2AB2008273C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2214FD2C9F2AB2008273C8 /* Preview Assets.xcassets */; };
+		0B22150A2C9F2AB2008273C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2215002C9F2AB2008273C8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0B2214C82C9F1CCF008273C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +35,15 @@
 		0B2214B72C9F1CCE008273C8 /* TechImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2214C72C9F1CCF008273C8 /* TechImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2214D12C9F1CCF008273C8 /* TechImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2214FD2C9F2AB2008273C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B2214FF2C9F2AB2008273C8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		0B2215002C9F2AB2008273C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B2215012C9F2AB2008273C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2215022C9F2AB2008273C8 /* TechImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechImageApp.swift; sourceTree = "<group>"; };
+		0B2215042C9F2AB2008273C8 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B2214B92C9F1CCE008273C8 /* TechImage */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TechImage;
-			sourceTree = "<group>";
-		};
 		0B2214CA2C9F1CCF008273C8 /* TechImageTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TechImageTests;
@@ -75,7 +84,7 @@
 		0B2214AE2C9F1CCE008273C8 = {
 			isa = PBXGroup;
 			children = (
-				0B2214B92C9F1CCE008273C8 /* TechImage */,
+				0B2215032C9F2AB2008273C8 /* TechImage */,
 				0B2214CA2C9F1CCF008273C8 /* TechImageTests */,
 				0B2214D42C9F1CCF008273C8 /* TechImageUITests */,
 				0B2214B82C9F1CCE008273C8 /* Products */,
@@ -92,6 +101,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0B2214FE2C9F2AB2008273C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0B2214FD2C9F2AB2008273C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B2215032C9F2AB2008273C8 /* TechImage */ = {
+			isa = PBXGroup;
+			children = (
+				0B22150C2C9F2AE9008273C8 /* Supporting Views */,
+				0B2214FE2C9F2AB2008273C8 /* Preview Content */,
+				0B2214FF2C9F2AB2008273C8 /* Album.swift */,
+				0B2215002C9F2AB2008273C8 /* Assets.xcassets */,
+				0B2215012C9F2AB2008273C8 /* Info.plist */,
+				0B2215022C9F2AB2008273C8 /* TechImageApp.swift */,
+			);
+			path = TechImage;
+			sourceTree = "<group>";
+		};
+		0B22150C2C9F2AE9008273C8 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B2215042C9F2AB2008273C8 /* AlbumView.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +144,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0B2214B92C9F1CCE008273C8 /* TechImage */,
 			);
 			name = TechImage;
 			packageProductDependencies = (
@@ -212,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2215092C9F2AB2008273C8 /* Preview Assets.xcassets in Resources */,
+				0B22150A2C9F2AB2008273C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2215062C9F2AB2008273C8 /* Album.swift in Sources */,
+				0B2215072C9F2AB2008273C8 /* TechImageApp.swift in Sources */,
+				0B2215082C9F2AB2008273C8 /* AlbumView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +438,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TechImage/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechImage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,9 +466,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TechImage/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TechImage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
