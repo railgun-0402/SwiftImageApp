@@ -9,8 +9,13 @@ struct Album: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("全ての項目")
-                Text("お気に入り")
+                AlbumView(name: "全ての項目",
+                          path: "",
+                          isFavorite: false)
+                AlbumView(name: "お気に入り",
+                          path: "",
+                          isFavorite: true)
+                
             }
             .navigationBarTitle(Text("アルバム"))
         }
