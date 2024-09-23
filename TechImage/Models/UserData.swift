@@ -5,4 +5,7 @@
 
 import Foundation
 
+final class UserData: ObservableObject {
+    @Published var images = imageInfos
+}
 
