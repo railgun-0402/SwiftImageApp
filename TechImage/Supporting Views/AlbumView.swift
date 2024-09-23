@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct AlbumView: View {
+    @EnvironmentObject private var userData: UserData
     
     // property
     let name: String
@@ -19,6 +20,8 @@ struct AlbumView: View {
     }
     
     var body: some View {
+        
+        
         VStack(alignment: .leading) {
             ZStack {
                 
@@ -57,7 +60,7 @@ struct AlbumView: View {
                 if self.isFavorite {
                     Text("0")
                 } else {
-                    Text("0")
+                    Text(String(self.userData.images.count))
                 }
             }
             .foregroundColor(.primary)
@@ -66,5 +69,5 @@ struct AlbumView: View {
 }
 
 #Preview {
-    AlbumView(name: "Tagosaku", path: "", isFavorite: true)
+    AlbumView(name: "Tagosaku", path: "", isFavorite: true).environmentObject(UserData())
 }
