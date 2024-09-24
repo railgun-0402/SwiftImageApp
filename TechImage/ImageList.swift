@@ -14,7 +14,7 @@ struct ImageList: View {
     var body: some View {
         List {
             ForEach (self.userData.images) { item in
-                Text("")
+                ImageListView(id: item.id)
             }
         }
         .navigationBarTitle(Text("画像リスト"))
