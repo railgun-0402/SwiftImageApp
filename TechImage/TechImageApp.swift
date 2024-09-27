@@ -23,6 +23,12 @@ struct TechImageApp: App {
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        let UserDefaults = UserDefaults.standard
+        
+        // お気に入り情報に空配列をデフォルト値として設定
+        UserDefaults.register(defaults: [UserDefaultKey.arrayFavorite: []])
+        
         return true
     }
 }
