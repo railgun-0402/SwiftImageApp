@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B825C472CA3184300BC2611 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 0B825C462CA3184300BC2611 /* ViewInspector */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0B2214C82C9F1CCF008273C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B825C472CA3184300BC2611 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +176,7 @@
 			);
 			name = TechImageUITests;
 			packageProductDependencies = (
+				0B825C462CA3184300BC2611 /* ViewInspector */,
 			);
 			productName = TechImageUITests;
 			productReference = 0B2214D12C9F1CCF008273C8 /* TechImageUITests.xctest */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 0B2214AE2C9F1CCE008273C8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0B825C452CA317F000BC2611 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0B2214B82C9F1CCE008273C8 /* Products */;
 			projectDirPath = "";
@@ -565,6 +574,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B825C452CA317F000BC2611 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B825C462CA3184300BC2611 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B825C452CA317F000BC2611 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B2214AF2C9F1CCE008273C8 /* Project object */;
 }
