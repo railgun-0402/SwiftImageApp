@@ -26,14 +26,25 @@ struct ImageListView: View {
                 // 余白は画面一杯
                 Spacer()
                 
-                // お気に入りなら色付きハートを出す
-                if self.userData.images[self.id].isFavorite {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(Color.pink)
-                } else {
-                    Image(systemName: "heart")
-                        .foregroundColor(Color.gray)
+                Group {
+                    // お気に入りなら色付きハートを出す
+                    if self.userData.images[self.id].isFavorite {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(Color.pink)
+                    } else {
+                        Image(systemName: "heart")
+                            .foregroundColor(Color.gray)
+                    }
                 }
+                
+                .onTapGesture {
+                    // お気に入り値の反転
+                    self.userData.images[self.id].isFavorite.toggle()
+                    
+                    saveFavorite(name: self.userData.images[self.id].name,
+                                 isFavorite: self.userData.images[self.id].isFavorite)
+                }
+                
             } else {
                 // 残念ながら画像が取れない場合は一旦これ
                 Text("None")
