@@ -11,10 +11,16 @@ import SwiftUI
 struct ImageList: View {
     @EnvironmentObject private var userData: UserData
     
+    var onlyFavorite: Bool
+    
     var body: some View {
         List {
             ForEach (self.userData.images) { item in
-                ImageListView(id: item.id)
+                if (self.onlyFavorite == true &&
+                    item.isFavorite) ||
+                    self.onlyFavorite == false {
+                    ImageListView(id: item.id)
+                }
             }
         }
         .navigationBarTitle(Text("画像リスト"))
@@ -22,5 +28,5 @@ struct ImageList: View {
 }
 
 #Preview {
-    ImageList().environmentObject(UserData())
+    ImageList(onlyFavorite: false).environmentObject(UserData())
 }

@@ -28,7 +28,7 @@ func loadImageInfos() -> Array<ImageInfo> {
     // ファイル名称でソート
     fileNames.sort {$0 < $1}
     
-    let favoriteArray: Array<String> = []
+    let favoriteArray: Array<String> = loadFavorite()
     var imageInfos: Array<ImageInfo> = []
     
     // ファイル情報を全て配列に入れる

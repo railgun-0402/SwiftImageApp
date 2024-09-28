@@ -58,7 +58,7 @@ struct AlbumView: View {
             // 画像数
             Group {
                 if self.isFavorite {
-                    Text("0")
+                    Text(String(countFavorite(images: self.userData.images)))
                 } else {
                     Text(String(self.userData.images.count))
                 }

@@ -19,11 +19,12 @@ func saveFavorite(name: String, isFavorite: Bool) {
     // お気に入り情報の取得
     let isFavoriteArrayWrap = UserDefaults.standard.stringArray(forKey: UserDefaultKey.arrayFavorite)
     
-    // お気に入りがない
+    // お気に入りがない場合は何もしない
     guard var isFavoriteArray = isFavoriteArrayWrap else {
         return
     }
     
+    // お気に入りの場合は保存し、そうでない場合は削除する
     if isFavorite {
         isFavoriteArray.append(name)
     } else {
