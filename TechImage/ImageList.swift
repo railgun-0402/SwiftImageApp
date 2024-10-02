@@ -19,7 +19,10 @@ struct ImageList: View {
                 if (self.onlyFavorite == true &&
                     item.isFavorite) ||
                     self.onlyFavorite == false {
-                    ImageListView(id: item.id)
+                    
+                    NavigationLink(destination: ImageScroll(onlyFavorite: self.onlyFavorite)) {
+                        ImageListView(id: item.id)
+                    }
                 }
             }
         }
