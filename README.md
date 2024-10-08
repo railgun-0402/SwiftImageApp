@@ -22,3 +22,12 @@ SwiftUIもやってみたかったので、シンプルなアプリをリリー�
 - 写真ごとにアルバムを作成する
 
 UnitTestはXCTestあたりを検討中
+
+## 音声認識
+- AVAudioEngine
+  - マイクから音声データをバッファ(一時的なメモリ領域)に取得
+- SFSpeechRecognizer
+  - 上記で取得した音声を、`SFSpeechAudioBufferRecognitionRequest` から受け取り解析&文字列化
+- SFSpeechAudioBufferRecognitionRequest
+  - マイクから取得した音声バッファを音声認識に渡す
+  - https://developer.apple.com/documentation/speech/sfspeechaudiobufferrecognitionrequest
